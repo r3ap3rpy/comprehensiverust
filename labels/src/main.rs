@@ -11,4 +11,8 @@ fn main() {
         }
     }
     dbg!(elements_searched);
+    'label: {
+        break 'label;
+        println!("This never gets executed!");
+    }
 }
